@@ -1,30 +1,31 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "de.paulhlschr",
+		"id": "genmeanything",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "GenMeAnything",
+			"description": "GenMeAnything enables players and server administrators to customize the vanilla stone generators. Also, the creation of custom generators using a so-called catalyst block is possible.",
 			"contributors": {
-				"Me!": "Owner"
+				"Paul \"SCHLVFMVNGEL\" Hölscher": "Creator"
 			},
+			"license": "LGPL-3.0-only",
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"homepage": "https://paulhlschr.de/",
+				"issues": "https://github.com/paulhlschr/GenMeAnything/issues",
+				"sources": "https://github.com/paulhlschr/GenMeAnything"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/genmeanything/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "de.paulhlschr.genmeanything.GenMeAnything"
 		},
 		"depends": [
 			{
 				"id": "quilt_loader",
-				"versions": ">=0.16.0-"
+				"versions": ">=0.17.0-"
 			},
 			{
 				"id": "quilted_fabric_api",
@@ -36,5 +37,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "genmeanything.mixins.json"
 }
